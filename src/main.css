@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    font-family: "montserrat", sans-serif;
+    @apply bg-slate-800 text-white;
+  }
+
+  main {
+    @apply p-6;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  body {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @layer components {
+	main {
+	  width: 400px;
+	}
+  }
+}
